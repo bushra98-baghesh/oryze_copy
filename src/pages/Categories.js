@@ -46,7 +46,7 @@ const Categories = () => {
         </p>
         */}
           <div
-            className={`flex justify-start mb-5   ${
+            className={`flex justify-start mb-4 px-4    ${
               lang == "ar" ? "justify-end mr-3 " : "justify-start ml-2 "
             }  `}
           >
@@ -60,7 +60,7 @@ const Categories = () => {
               sortedCategories.map((cat) => {
                 return (
                   <div key={cat.id}>
-                    <div className="focus-within:text-[#ab714d] mx-2 my-3">
+                    <div className="focus-within:text-[#ab714d] mx-2 my-6">
                       <button className=" h-28   overflow-hidden focus-within:border-[#ab714d]     rounded-lg cursor-pointer   hover:border-[#ab714d] border-inherit transition duration-300 ease-in-out flex flex-col items-center justify-center  w-full">
                         <LazyLoadImage
                           src={cat.imageurl}
@@ -77,7 +77,7 @@ const Categories = () => {
                           className=" object-center brightness-50 bg-blend-darken object-fill h-28 w-full rounded-lg hover:scale-110 hover:opacity-60 ease-in-out duration-200 transition-all"
                         />
                       </button>
-                      <h1 className=" py-2 cursor-pointer sm:text-base text-md  pb-1  text-[#D0B8A8]  whitespace-normal">
+                      <h1 className="  cursor-pointer sm:text-base text-md   text-[#D0B8A8]  whitespace-normal">
                         {lang == "ar" ? cat.name_trans : cat.name}
                       </h1>
                     </div>

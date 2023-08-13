@@ -10,7 +10,7 @@ const CategoryItem = ({ category, lang, onClick }) => {
         <img
           src={category.imageurl}
           alt={category.name}
-          className="object-center object-contain h-32 w-full rounded-lg hover:scale-110 hover:opacity-60 ease-in-out duration-200 transition-all "
+          className="object-center object-contain h-28 w-full rounded-lg hover:scale-110 hover:opacity-60 ease-in-out duration-200 transition-all "
         />
       </button>
       <h1 className="text-xs py-2 cursor-pointer  sm:text-base md:text-lg pb-1 text-[#C4C4C4] tracking-wider">

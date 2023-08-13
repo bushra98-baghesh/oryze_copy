@@ -28,7 +28,7 @@ function TopOffers() {
   return (
     <>
       {loading ? (
-        <Loader />
+        <div className="loading"></div>
       ) : (
         <div className="container rounded-xl mx-auto py-6">
           <Swiper
